@@ -1,0 +1,162 @@
+    <html>
+        <head>
+            <title>Form</title>
+            <meta name="viewport" content="width=device - width, initial-scale=1.0">
+        </head>
+        <body>
+            <style>
+              
+            
+                .main{
+                    padding-top: 2em;
+                
+                }
+
+                body{
+                    background-color: #99b596;
+                    text-align: center;   
+                    max-height: 100%;
+                }
+
+                .checkbox1{
+                    display: inline-table;
+                    width: 50%;
+                    padding-left: 30;
+                    text-align: left;  
+                }
+
+                .formm {
+                    background-color: white;
+                    display: block;
+                    width: 100em;
+                    text-align: center;
+                    margin-left: 5%;
+                    padding-bottom: 30em;
+                    padding-top: 3em;
+                    
+                }
+
+                .fname {
+                display: inline-block;
+                width: 10%;
+                text-align: center;
+                padding-top: 20px;
+                }
+
+                .input-fname {
+                    
+                    text-align: left;
+                    width: 20%;
+                    display: inline-block;
+                }
+
+                .divide{
+                    padding-top: 30px;
+                    text-align: right;
+                    display: inline-block;
+                    width: 35%;
+                
+                    margin-right: 10;
+                }
+
+                .dropdown{
+                    padding-bottom: 5px;
+                    padding-top: 30px;
+                    text-align: left;
+                    width: 44%;
+                    display: inline-block;
+                    padding-left: 50px;
+                    margin-right: 40;
+                }
+
+                .radio{
+                    width: 40%;
+                    text-align: right;
+                    align-self: left;
+                    display: inline;
+                }
+
+                .t-radio{
+                    padding-top: 30px;
+                    text-align: right;
+                    display: inline-block;
+                    width: 44%;
+                    margin-left: -400;
+                }
+
+                .dropdown2 {
+                padding-right: 40px;
+                    text-align: right;
+                    display: inline-block;
+                    width: 43%;
+                    margin-left: -401;
+                }
+                
+                .dropdown21{
+                    display: inline-block;
+                    width: 20%;
+                    margin: right 9px;
+                    padding-left: 15;
+                }
+
+                .checkbox{
+                    display: inline-block;
+                    width: 40%;
+                    text-align: right;
+                }
+
+
+            </style>
+            
+                <b><h1 >Survey Form</h1></b>
+                
+                <div class="formm">
+                    <form method="POST" id="survey-form1">
+                        <label for="topic">Let us know how we can improve freeCodeCamp</label> <br>
+                    <div class="fname"> <label for="Name"> Name:</label> </div>
+                        <div class="input-fname"><input type="text" id="Name" name="Name" placeholder="Enter Name"> </div><br>
+                        <div class="fname"><label for="Email">Email:</label></div>
+                        <div class="input-fname"> <input type="email" placeholder="Email" id="Email" name="Email"> </div><br>
+                        <div class="fname"><label for="Age">Age:</label></div>
+                        <div class="input-fname"><input type="number" id="Age" name="Age" placeholder="Age"> </div><br>
+                    
+                    <div class="divide"> <label for="Description">Which option best describes your current role?</label></div>
+                    <div class="dropdown"> <select name="student" id="student">
+                            <option value="student">student</option>
+                            <option value="Enterprenure">Good</option>
+                            <option value="Parent">Hardworking</option>
+                            <option value="Employed">Lazy</option>
+                            <option value="Unemployed">rude</option>                
+                        </select> </div> <br>
+                        
+                    
+                        <div class="t-radio"><label for="name">How likely is that you would recommend freeCodeCamp?</label></div>
+                        <div class="radio"> <input type="radio" id="choice1" name="choice1" value="Definately"> 
+                            <label for="choice2">Definately</label><br>
+                            <input type="radio" id="choice2" name="choice2">
+                            <label for="choice2">Maybe</label><br>
+                            <input type="radio" id="choice3" name="choice3">
+                            <label for="choice3">Not sure</label><br>
+                        </div>
+                        
+                        <div class="dropdown2">
+                            <label for="name">What do you like most in FCC</label></div>
+                                <div class="dropdown21"><select name="select" id="option">
+                                    <option value="1">Great interaction</option> 
+                                    <option value="2">Clearity</option>
+                                    <option value="3">Friendlyness</option>
+                                </select></div>
+                                <br>
+                            <div class="checkbox"><label for="name">Things that should be improved in the future <br> (Check all that apply):</label></div>
+                        <div class="checkbox1"> <input type="checkbox" id="choice4" name="choice4" value="Front-end Projects"> 
+                            <label for="choice4">Front-end Projects</label><br>
+                            <input type="checkbox" id="choice5" name="choice5">
+                            <label for="choice5">Back-end Projects</label><br>
+                            <input type="checkbox" id="choice6" name="choice6">
+                            <label for="choice6">Data Visualization</label>
+                            </div>
+                            </form>
+                </div>
+            
+        </body>
+    </html>
